@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const config = require('./config/connection');
@@ -13,6 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.engine("handlebars" , hbs.engine);
 app.set('view engine', 'handlebars');
+app .use(express.static(path.join(__dirname, 'public' )));
 app.use(routes); 
 
 config.sequelize.sync({ force: true }).then(() => {
