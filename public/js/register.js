@@ -1,12 +1,13 @@
-// How do I get the register here link to register people"
+const loginButton = document.querySelector('.col-lg-7');
+console.log('Hello');
+async function handleLogin(event){
+    event.preventDefault();
+    console.log('this shit work?');
 
-const registerHere = document.querySelector('.form my-4 mx-5')
-
-async function registerUser(event){
-  event.preventDefault();
-  console.log("Registration Works!");
+    const emailValue = document.querySelector('email')
 }
-registerHere.addEventListener("btn1", registerUser);
+
+loginButton.addEventListener('click', handleLogin);
 
 
 

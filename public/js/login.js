@@ -1,12 +1,14 @@
-// The click for the button is working now
+// The click for the button is working now. 
 const loginButton = document.querySelector('.col-lg-7');
 console.log('Hello');
 async function handleLogin(event){
     event.preventDefault();
     console.log('this shit work?');
+
+    const emailValue = document.querySelector('email')
 }
 
-loginButton.addEventListener('click', handleLogin);
+loginButton.addEventListener('submit', handleLogin);
 
 // async function loginUser(event) {
 //     // username.trim()
