@@ -3,10 +3,13 @@ const loginButton = document.querySelector('.col-lg-7');
 console.log('Hello');
 async function handleLogin(event){
     event.preventDefault();
-    console.log('this shit work?');
 
-    const emailValue = document.querySelector('email')
+    const emailValue = document.querySelector('#email-login').value.trim();
+    const passwordValue = document.querySelector('#password-login').value.trim();
+
+    console.log({emailValue, passwordValue});
 }
+
 
 loginButton.addEventListener('submit', handleLogin);
 
