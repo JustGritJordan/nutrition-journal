@@ -1,14 +1,39 @@
-const loginButton = document.querySelector('.col-lg-7');
+// Why does this keep restarting?
+const registerButton = document.querySelector('.col-lg-7');
+// console.log is working
 console.log('Hello');
-async function handleLogin(event){
+
+async function handleRegister(event) {
     event.preventDefault();
-    console.log('this shit work?');
 
-    const emailValue = document.querySelector('email')
+    const emailValue = document.querySelector('#email-register').value.trim();
+    const passwordValue = document.querySelector('#password-register').value.trim();
+
+
+    console.log({emailValue, passwordValue});
 }
+    // const newUser = {
+    //     email: emailValue,
+    //     password: passwordValue,
+    // };
 
-loginButton.addEventListener('click', handleLogin);
+    // const response = await fetch('/api/login', {
+    //     body:JSON.stringify(newUser),
+    //     method: 'POST',
+    //     headers: {
+    //         'content-type' : 'application/json'
+    //     },
+    // });
 
+    // if(response.ok) {
+    //     console.log('it worked');
+    //     } else {
+    //         console.log('not working');
+    //     }
+// }
+
+
+registerButton.addEventListener('submit', handleRegister);
 
 
 
@@ -38,3 +63,13 @@ loginButton.addEventListener('click', handleLogin);
 //   document
 //     .querySelector('.register-form')
 //     .addEventListener('submit', registerFormHandler);
+
+
+
+// LOOK HERE**********************************************
+// Why is registration page restarting?
+// How do I create new user data?
+// How do I get logins to work?
+// Still need to make notes page
+// How do I tie into API
+// Technologies?
