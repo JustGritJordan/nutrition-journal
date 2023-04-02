@@ -1,7 +1,5 @@
-// Why does this keep restarting?
-const registerButton = document.querySelector('.col-lg-7');
+const registerButton = document.querySelector('.btn1');
 // console.log is working
-console.log('Hello');
 
 async function handleRegister(event) {
     event.preventDefault();
@@ -9,6 +7,7 @@ async function handleRegister(event) {
     const emailValue = document.querySelector('#email-register').value.trim();
     const passwordValue = document.querySelector('#password-register').value.trim();
 
+    
 
     console.log({emailValue, passwordValue});
 }
@@ -33,7 +32,7 @@ async function handleRegister(event) {
 // }
 
 
-registerButton.addEventListener('submit', handleRegister);
+registerButton.addEventListener('click', handleRegister);
 
 
 
@@ -67,7 +66,6 @@ registerButton.addEventListener('submit', handleRegister);
 
 
 // LOOK HERE**********************************************
-// Why is registration page restarting?
 // How do I create new user data?
 // How do I get logins to work?
 // Still need to make notes page
