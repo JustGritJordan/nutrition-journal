@@ -1,5 +1,5 @@
 // The click for the button is working now. 
-const loginButton = document.querySelector('.col-lg-7');
+const loginButton = document.querySelector('.btn1');
 console.log('Hello');
 async function handleLogin(event){
     event.preventDefault();
@@ -8,10 +8,24 @@ async function handleLogin(event){
     const passwordValue = document.querySelector('#password-login').value.trim();
 
     console.log({emailValue, passwordValue});
-}
+    if (email && password) {
+        const response = await fetch('/api/user/register', {
+          method: 'POST',
+          body: JSON.stringify({ email, password }),
+          headers: { 'Content-Type': 'application/json' },
+        });
+    
+        if (response.ok) {
+          document.location.replace('/');
+        } else {
+          alert(response.statusText);
+        }
+      }
+    };
+    
 
 
-loginButton.addEventListener('submit', handleLogin);
+loginButton.addEventListener('click', handleLogin);
 
 // async function loginUser(event) {
 //     // username.trim()

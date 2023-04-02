@@ -3,8 +3,11 @@ const { User } = require('../../models');
 
 router.post('/register', async (req, res) => {
   try {
-    const userData = await User.create(req.body);
-
+    const userData = await User.create({
+      email :req.body.emailValue,
+      password : req.body.passwordValue,
+    });
+console.log(req.body);
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
@@ -15,6 +18,14 @@ router.post('/register', async (req, res) => {
     res.status(400).json(err);
   }
 });
+
+router.get('/', async (req, res) =>{
+  try { const usersData = await User.findAll()
+    res.status(200).json(usersData)
+  } catch (error) {
+    res.status(400).json(err);
+  }
+})
 
 router.post('/login', async (req, res) => {
   try {
