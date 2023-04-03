@@ -29,5 +29,3 @@ MIT.Liscense
 ## Tests
 NPM
 
-## Links
-Github Link - https://github.com/JustGritJordan/nutrition-journal
