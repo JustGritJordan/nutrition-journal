@@ -20,12 +20,10 @@ From the Login page users will be able to either login to their accounts, if the
 Users will able to register for an accout on the sign up page by entering their emal and a password of their choosing.
 ![nutritional journal register](https://user-images.githubusercontent.com/111651316/229391515-70805d64-7461-4d21-9f4d-392fe0e2f710.png)
 
-
 Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
-![alt text](assets/images/screenshot.png)
 
 ## Credits
 
