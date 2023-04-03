@@ -31,3 +31,7 @@ NPM
 
 ## Links
 Github Link - https://github.com/JustGritJordan/nutrition-journal
+
+Heroku - https://nutritional-journal.herokuapp.com/
+
+Screencastify - https://drive.google.com/file/d/1TAj8mHp85FcKmLaxMg2Pfn
