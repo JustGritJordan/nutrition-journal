@@ -14,6 +14,8 @@ npm install, node.js, mySQL2, nodemon, Sequelize
 View the landing page here. In the top left corner select login.
 ![nutritional journal landing page](https://user-images.githubusercontent.com/111651316/229389790-31e01e8f-b65f-42f7-b481-9452963c9452.png)
 
+From the Login page users will be able to either login to their accounts, if they do not have an account they can register using the register here link.
+![nutritional journal login page](https://user-images.githubusercontent.com/111651316/229390463-dccba458-9786-4c80-a4a7-1cffa32f505c.png)
 
 Provide instructions and examples for use. Include screenshots as needed.
 
