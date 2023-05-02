@@ -29,7 +29,7 @@ MIT.Liscense
 ## Tests
 NPM
 
-## Links
+ ## Links
 Github Link - https://github.com/JustGritJordan/nutrition-journal
 
 Heroku - https://nutritional-journal.herokuapp.com/
