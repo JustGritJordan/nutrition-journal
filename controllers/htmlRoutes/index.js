@@ -12,5 +12,9 @@ router.get('/register', async(req, res) => {
     res.render('register');
 });
 
+router.get('/profile', async(req, res) => {
+    res.render('profile');
+});
+
 
 module.exports = router;
