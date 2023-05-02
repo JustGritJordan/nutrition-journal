@@ -5,8 +5,8 @@
 
 function showNutritionData() {
     // fetch request gets a list of all the repos for the node.js organization
-    const requestUrl = 'https://api.github.com/orgs/nodejs/repos';
-  
+    const requestUrl = "https://api.api-ninjas.com/v1/nutrition?query=";                                           //Why is API KEY not working?
+    headers: { 'X-Api-Key'; 'GDPoj1GGfvpCVpqAi3UAYg==YnZXl7SnTbs8tAMJ'};
     fetch(requestUrl)
       .then(function (response) {
         return response.json();
