@@ -10,26 +10,25 @@ async function handleRegister(event) {
     
 
     console.log({emailValue, passwordValue});
+    const newUser = {
+        email: emailValue,
+        password: passwordValue,
+    };
+
+    const response = await fetch('/api/register', {
+        body:JSON.stringify(newUser),
+        method: 'POST',
+        headers: {
+            'content-type' : 'application/json'
+        },
+    });
+
+    if(response.ok) {
+        console.log('it worked');
+        } else {
+            console.log('not working');
+        }
 }
-    // const newUser = {
-    //     email: emailValue,
-    //     password: passwordValue,
-    // };
-
-    // const response = await fetch('/api/login', {
-    //     body:JSON.stringify(newUser),
-    //     method: 'POST',
-    //     headers: {
-    //         'content-type' : 'application/json'
-    //     },
-    // });
-
-    // if(response.ok) {
-    //     console.log('it worked');
-    //     } else {
-    //         console.log('not working');
-    //     }
-// }
 
 
 registerButton.addEventListener('click', handleRegister);
