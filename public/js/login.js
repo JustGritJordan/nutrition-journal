@@ -1,31 +1,91 @@
-// The click for the button is working now. 
-const loginButton = document.querySelector('.btn1');
-console.log('Hello');
-async function handleLogin(event){
-    event.preventDefault();
+const registerButton =document.querySelector('.register-form');
 
-    const emailValue = document.querySelector('#email-login').value.trim();
-    const passwordValue = document.querySelector('#password-login').value.trim();
 
-    console.log({emailValue, passwordValue});
-    if (email && password) {
-        const response = await fetch('/api/user/register', {
-          method: 'POST',
-          body: JSON.stringify({ email, password }),
-          headers: { 'Content-Type': 'application/json' },
-        });
+async function handleRegister(event){
+  event.preventDefault();
+  console.log('you registered!');
+}
+registerButton.addEventListener('click', handleRegister);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// BEGINNING DATA*************************************
+// // The click for the button is working now. 
+// const loginButton = document.querySelector('.btn1');
+// console.log('Hello');
+// async function handleLogin(event){
+//     event.preventDefault();
+
+//     const emailValue = document.querySelector('#email-login').value.trim();
+//     const passwordValue = document.querySelector('#password-login').value.trim();
+
+//     console.log({emailValue, passwordValue});
+//     if (email && password) {
+//         const response = await fetch('/api/user/register', {
+//           method: 'POST',
+//           body: JSON.stringify({ email, password }),
+//           headers: { 'Content-Type': 'application/json' },
+//         });
     
-        if (response.ok) {
-          document.location.replace('/');
-        } else {
-          alert(response.statusText);
-        }
-      }
-    };
-    
+//         if (response.ok) {
+//           document.location.replace('/');
+//         } else {
+//           alert(response.statusText);
+//         }
+//       }
+//     };
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+// loginButton.addEventListener('click', handleLogin);
 
-loginButton.addEventListener('click', handleLogin);
 
 // async function loginUser(event) {
 //     // username.trim()
