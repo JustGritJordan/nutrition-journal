@@ -1,34 +1,23 @@
-const registerButton =document.querySelector('.register-form');
+const registerForm = document.querySelector(".register-form");
 
-
-async function handleRegister(event){
+async function handleRegister(event) {
   event.preventDefault();
-  console.log('you registered!');
+  console.log("you registered!");
+
+  const emailRegister = document
+    .querySelector("#email-register")
+    .value
+    .trim();
+  const passwordRegister = document
+    .querySelector("#password-register")
+    .value
+    .trim();
+
+    console.log({emailRegister,passwordRegister});
+
+    // registerForm.reset();
 }
-registerButton.addEventListener('click', handleRegister);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+registerForm.addEventListener("click", handleRegister);
 
 
 
@@ -57,7 +46,7 @@ registerButton.addEventListener('click', handleRegister);
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // BEGINNING DATA*************************************
-// // The click for the button is working now. 
+// // The click for the button is working now.
 // const loginButton = document.querySelector('.btn1');
 // console.log('Hello');
 // async function handleLogin(event){
@@ -73,7 +62,7 @@ registerButton.addEventListener('click', handleRegister);
 //           body: JSON.stringify({ email, password }),
 //           headers: { 'Content-Type': 'application/json' },
 //         });
-    
+
 //         if (response.ok) {
 //           document.location.replace('/');
 //         } else {
@@ -86,7 +75,6 @@ registerButton.addEventListener('click', handleRegister);
 
 // loginButton.addEventListener('click', handleLogin);
 
-
 // async function loginUser(event) {
 //     // username.trim()
 //     // password.trim()
@@ -96,18 +84,18 @@ registerButton.addEventListener('click', handleRegister);
 //     if (usernameValue && passwordValue) {
 //       // Send the e-mail and password to the server
 //       console.log({ usernameValue, passwordValue });
-  
+
 //       const signUpData = {
 //         user_name: usernameValue,
 //         password: passwordValue,
 //       };
-  
+
 //       const response = await fetch('/api/users/login', {
 //         body: JSON.stringify(signUpData),
 //         method: 'POST',
 //         headers: { 'Content-Type': 'application/json' },
 //       });
-  
+
 //       if (response.ok) {
 //         document.location.replace('/webpage');
 //         console.log('login successful');
@@ -116,7 +104,6 @@ registerButton.addEventListener('click', handleRegister);
 //       }
 //     }
 //   }
-  
+
 //   login.addEventListener('click', loginUser);
 //   createUser.addEventListener('click', newUser);
-  
