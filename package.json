@@ -1,7 +1,7 @@
 {
   "name": "nutrition-journal",
   "version": "1.0.0",
-  "description": "",
+  "description": "As a personal trainer one of the hardest things to do, it to motivate clients to alter their eating habits. Before starting to build a routine in the gym it is beneficial to become more aware of how you eat so that you can recieve the best result from the gym. This application's purpose is to record food and display the amount of calories from it. \r  I built this project to simulate one of the first activities I assign clients which is to write down everything they eat during the day.This give clients a structure that they can use verses using and regular notes tab. It is very easy to get lost in the creation of your application.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
