@@ -7,7 +7,7 @@ router.post('/login', async (req, res) => {
     '~ file: index.js:5 ~ router.post ~ newUserData:',
     newUserData
   );
-  req.send(201).json({message: 'New User created'});
+  res.send(201).json({message: 'New User created'});
 //   try {
 //     const dbUser = await User.create(req.body);
 //     const plainUser = dbUser.get({ plain:true});
