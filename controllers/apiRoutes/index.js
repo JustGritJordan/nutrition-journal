@@ -1,21 +1,26 @@
 const router = require('express').Router();
+// const User = require('../../models');
 
-router.post('/login', async (req,res) => {
-   const newUserData = req.body;
+router.post('/login', async (req, res) => {
+  const newUserData = req.body;
+  console.log(
+    '~ file: index.js:5 ~ router.post ~ newUserData:',
+    newUserData
+  );
+  req.send(201).json({message: 'New User created'});
+//   try {
+//     const dbUser = await User.create(req.body);
+//     const plainUser = dbUser.get({ plain:true});
 
-   req.session.save(()=>{
-    req.session.loggedIn = true;
-    res.status(201).json({ message: 'New user created!'});
-   });
+// console.log('~ file: index.js:9 ~ router.post ~ plainUser');
 
-}); 
-
-
-// const router = require('express').Router();
-// const mealsRoutes = require('./meals')
-// const userRoutes = require('./user')
-
-// router.use("/user",userRoutes);
-// router.use("/meals", mealsRoutes);
+//     req.session.save(() => {
+//       req.session.loggedIn = true;
+//       res.status(201).json(plainUser);
+//     });
+//   } catch(error) {
+//     console.log(error);
+//   }
+});
 
 module.exports = router;
